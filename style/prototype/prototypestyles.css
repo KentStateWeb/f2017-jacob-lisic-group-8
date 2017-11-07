@@ -8,7 +8,7 @@ body,html {
 body {
 
   color: #F4F2F1;
-
+  font-family: Avenir Next;
 }
 
 /* Header */
@@ -64,6 +64,15 @@ body {
 
 }
 
+/* Body */
+
+.body-text {
+
+  color: black;
+  margin-top: 100px;
+
+}
+
 /* BOOK NOW Button */
 
 .booknow {
@@ -95,6 +104,14 @@ body {
   background-color: #61574B;
   border: solid #2C4C3B 5px;
   transition: all 0.3s ease 0s;
+
+}
+
+/* Footer Text */
+
+.footer-text {
+
+  color: black;
 
 }
 
