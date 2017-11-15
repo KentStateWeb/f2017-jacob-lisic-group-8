@@ -10,27 +10,34 @@
   </head>
   <body>
     <header>
-      <ul>
-        <img src = "img/buckeyelogo.svg" alt = "logo" class = "logo"/>
-        <li>
-          <a class = "active" href = "#home">Home</a>
-        </li>
-        <li>
-          <a href = "ourrooms.html">Our Rooms</a>
-        </li>
-        <li>
-          <a href = "#thehouse">The House</a>
-        </li>
-        <li>
-          <a href = "reservations.html">Reservations</a>
-        </li>
-        <li>
-          <a href = "#contact">Contact</a>
-        </li>
-      </ul>
+      <img src = "img/buckeyelogo.svg" alt = "logo" class = "logo"/>
+      <a href="#menu" class="menu-link">
+        <div class="menu-link__hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+      </a>
+      <nav id="menu" role="navigation">
+        <ul>
+          <li>
+            <a class = "active" href = "#home">Home</a>
+          </li>
+          <li>
+            <a href = "ourrooms.html">Our Rooms</a>
+          </li>
+          <li>
+            <a href = "#thehouse">The House</a>
+          </li>
+          <li>
+            <a href = "reservations.html">Reservations</a>
+          </li>
+          <li>
+            <a href = "#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-       <!-- The page content goes here -->
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
       <!-- Come Join -->
       <main>
         <div class = "body-text">
@@ -78,5 +85,8 @@
         <div class = "booknow">
           <button class = "booknow" type="button">BOOK NOW</button>
         </div>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src = "scripts.js"></script>
+        <link href = "style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
   </body>
 </html>
