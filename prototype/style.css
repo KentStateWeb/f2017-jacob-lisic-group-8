@@ -1,13 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600i,700|PT+Sans:400,700|Raleway:300,400,700');
+
 body {
   max-width: 1000px;
   padding: 1em;
-  font-family: Helvetica, Arial, sans-serif;
+  background-color: #F4F2F1;
 }
+
 
 div, section, main, aside, header, footer {
   border: 1px solid lightgray;
   padding: .5em;
   margin-bottom: 1em;
+}
+
+.navul {
+  position: fixed;
+  background-color: #61574B;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  font-family: 'PT+Sans:400', sans-serif;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+nav a {
+  display: block;
+  text-align: center;
+}
+
+.navli a {
+  color: #F4F2F1;
+  display: inline-block;
+  text-align: center;
+}
+
+.navli a:after {
+  position: relative;
+  top: -50px;
+  content: "";
+  display: inline-block;
+  width: 0px;
+  background: #F4F2F1;
+  height: 3px;
+  opacity: 0;
+  transition: opacity, width;
+  transition-duration: .3s;
+}
+
+.navul a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+ul {
+  display: inline;
+}
+
+.link {
+  color: #61574B;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #F4F2F1;
+}
+
+a:active {
+  border-bottom: 2px solid #F4F2F1;
 }
 
 .buckeyehouse {
@@ -16,45 +91,61 @@ div, section, main, aside, header, footer {
 
 .logo {
   max-width: 100px;
+  height: 50px;
+  vertical-align: middle;
+  padding: .5em;
+  float: left;
+  background-color: #F4F2F1;
 }
 
 .room-image {
   max-width: 100px;
 }
-/*
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-*/
-/* Add a hover effect if you want */
-/*
-.fa:hover {
-    opacity: 0.7;
-}
-*/
-/* Set a specific color for each brand */
 
-/* Facebook */
-/*
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.join-us {
+  font-family: 'PT+Sans:400', sans-serif;
 }
-*/
-/* Twitter */
-/*
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
+
+h1 {
+  font-family: 'PT+Sans:400', sans-serif;
+  color: #2C4C3B;
 }
-*/
+
+h2 {
+  font-family: 'PT+Sans:400', sans-serif;
+  color: #2C4C3B;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Raleway';
+}
+
+.roominfo {
+  font-family: 'Raleway';
+}
+
+.room-title {
+  font-family: 'PT+Sans:400', sans-serif;
+  font-weight: bold;
+}
+
+.special-offers {
+  font-family: 'PT+Sans:400', sans-serif;
+  color: #2C4C3B;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.roomname {
+  font-family: 'Open Sans', sans-serif;
+}
 
 /* Start of hamburger navigation CSS */
-
 a.menu-link {
         float: right;
             display: block;
@@ -139,12 +230,10 @@ nav[role=navigation] {
         nav[role=navigation] ul {
             margin: 0;
             padding: 0;
-            border-top: 1px solid #808080;
         }
         nav[role=navigation] li a {
             display: block;
             padding: 0.8em;
-            border-bottom: 1px solid #808080;
         }
 
         @media screen and (min-width:800px) {
@@ -167,5 +256,191 @@ nav[role=navigation] {
                 border: 0;
             }
         }
-
 /* End of hamburger navigation CSS */
+
+/* FOOTER */
+
+footer {
+  background-color: #90816F;
+  height: 150px;
+  border-top: 5px solid #2C4C3B;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+}
+
+.footer-text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #F4F2F1;
+  text-align: center;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #90816F;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #90816F;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #90816F;
+}
+.fa-instagram:hover {
+    background-color: #125688;
+}
+
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #90816F;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+/* BOOK NOW BUTTON */
+
+.booknow {
+
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  text-shadow: 1px 1px 1px #666666;
+  font-family: 'Gill Sans', sans-serif;
+  color: #61574B;
+  font-size: 20px;
+  background-color: #F4F2F1;
+  padding: 10px 20px 10px 20px;
+  border: solid #61574B 5px;
+  text-decoration: none;
+
+}
+
+.booknow:focus {
+
+  outline: none;
+
+}
+
+.booknow:hover {
+
+  text-decoration: none;
+  color: #F4F2F1;
+  background-color: #90816F;
+  border: solid #2C4C3B 5px;
+  transition: all 0.3s ease 0s;
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .booknow {
+
+    bottom: 10px;
+    right: 20px;
+    text-shadow: .5 .5 .5 #666666;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    border: solid #61574B 3px;
+
+  }
+
+  .booknow:hover {
+
+    border: solid #2C4C3B 3px;
+
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+
+  .booknow {
+
+    bottom: 15px;
+    right: 25px;
+    text-shadow: .75 .75 .75 #666666;
+    font-size: 18px;
+    padding: 7.5px 15px 7.5px 15px;
+    border: solid #61574B 4px;
+
+  }
+
+  .booknow:hover {
+
+    border: solid #2C4C3B 4px;
+
+  }
+
+}
+
+/* OUR ROOMS BOOK NOW */
+
+.room-booknow {
+  background-color: #61574B;
+  font-family: 'Gill Sans', sans-serif;
+  color: #F4F2F1;
+  padding: .6em 1.5em;
+}
+
+.room-booknow:hover {
+  background-color: #2C4C3B;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}

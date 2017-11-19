@@ -8,36 +8,39 @@
     <meta name="description" content="Page Description Goes Here">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
+  <header>
+    <a href="#menu" class="menu-link">
+      <div class="menu-link__hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+    </a>
+    <nav id="menu" role="navigation" class = "navbar">
+      <ul class = "navul">
+        <li>
+          <a href = "index.html"><img src = "img/buckeyelogo.svg" alt = "logo" class = "logo"/></a>
+        </li>
+        <li class = "navli">
+          <a href = "index.html" class = "link">Home</a>
+        </li>
+        <li class = "navli">
+          <a href = "ourrooms.html" class = "link">Our Rooms</a>
+        </li>
+        <li class = "navli">
+          <a href = "#thehouse" class = "link">The House</a>
+        </li>
+        <li class = "navli">
+          <a href = "reservations.html" class = "link">Reservations</a>
+        </li>
+        <li class = "navli">
+          <a href = "#contact" class = "link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <body>
-    <header>
-      <img src = "img/buckeyelogo.svg" alt = "logo" class = "logo"/>
-      <a href="#menu" class="menu-link">
-        <div class="menu-link__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-        </div>
-      </a>
-      <nav id="menu" role="navigation">
-        <ul>
-          <li>
-            <a class = "active" href = "#home">Home</a>
-          </li>
-          <li>
-            <a href = "ourrooms.html">Our Rooms</a>
-          </li>
-          <li>
-            <a href = "#thehouse">The House</a>
-          </li>
-          <li>
-            <a href = "reservations.html">Reservations</a>
-          </li>
-          <li>
-            <a href = "#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+
       <!-- Come Join -->
       <main>
         <div class = "body-text">
@@ -72,19 +75,21 @@
           <hr class = "break-line"/>
         </div>
       </main>
-      <footer class = "footer-text">
-        <p>
-          Copyright 2017 Buckeye Bed and Breakfast.
-        </p>
-        <a href = "#" class = "fa fa-facebook"></a>
-        <a href = "#" class = "fa fa-twitter"></a>
-        <a href = "#" class = "fa fa-instagram"></a>
-        <a href = "#" class = "fa fa-email"></a>
-      </footer>
-  <!-- Button -->
-        <div class = "booknow">
-          <button class = "booknow" type="button">BOOK NOW</button>
+      <footer>
+        <h4 class="footer-text">Copyright 2017 Buckeye Bed and Breakfast.</h4>
+        <div class="footer-social-icons">
+          <ul class="social-icons">
+            <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+          </ul>
         </div>
+      </footer>
+      <!-- BOOK NOW -->
+            <div class = "booknow">
+              <a href ="reservations.html" class = "booknow">BOOK NOW</a>
+            </div>
         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src = "scripts.js"></script>
         <link href = "style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->

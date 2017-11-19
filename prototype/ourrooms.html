@@ -8,39 +8,49 @@
     <meta name="description" content="Page Description Goes Here">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
-    <header>
-      <ul>
-        <img src = "img/buckeyelogo.svg" alt = "logo" class = "logo" />
+  <header>
+    <a href="#menu" class="menu-link">
+      <div class="menu-link__hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+    </a>
+    <nav id="menu" role="navigation" class = "navbar">
+      <ul class = "navul">
         <li>
-          <a href = "#home">Home</a>
+          <a href = "index.html"><img src = "img/buckeyelogo.svg" alt = "logo" class = "logo"/></a>
         </li>
-        <li>
-          <a href = "ourrooms.html" class = "active">Our Rooms</a>
+        <li class = "navli">
+          <a href = "index.html" class = "link">Home</a>
         </li>
-        <li>
-          <a href = "#thehouse">The House</a>
+        <li class = "navli">
+          <a href = "ourrooms.html" class = "link">Our Rooms</a>
         </li>
-        <li>
-          <a href = "reservations.html">Reservations</a>
+        <li class = "navli">
+          <a href = "#thehouse" class = "link">The House</a>
         </li>
-        <li>
-          <a href = "#contact">Contact</a>
+        <li class = "navli">
+          <a href = "reservations.html" class = "link">Reservations</a>
+        </li>
+        <li class = "navli">
+          <a href = "#contact" class = "link">Contact</a>
         </li>
       </ul>
-    </header>
+    </nav>
+  </header>
+  <body>
        <!-- The page content goes here -->
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
     <main>
       <div>
         <h2>ROOMS</h2>
         <ul>
           <li>
-            <a href = "#sweetheart-haven">Sweetheart Haven</a>
-            <a href = "#treetop">Treetop</a>
-            <a href = "#enchantment">Enchantment</a>
-            <a href = "#out-of-africa">Out of Africa</a>
-            <a href = "#special-offers">Special Offers</a>
+            <a href = "#sweetheart-haven" class = "roomname">Sweetheart Haven</a>
+            <a href = "#treetop" class = "roomname">Treetop</a>
+            <a href = "#enchantment" class = "roomname">Enchantment</a>
+            <a href = "#out-of-africa" class = "roomname">Out of Africa</a>
+            <a href = "#special-offers" class = "roomname">Special Offers</a>
           </li>
         </ul>
       </div>
@@ -53,7 +63,7 @@
         <p>
           Price per night: $190
         </p>
-        <button class = "room-booknow" type="button">BOOK NOW</button>
+        <a href = "reservations.html" class = "room-booknow">BOOK NOW</a>
       </div>
       <div>
         <img src = "img/treetop.jpg" alt = "Treetop" class = "room-image" />
@@ -64,7 +74,7 @@
         <p>
           Price per night: $175
         </p>
-        <button class = "room-booknow" type="button">BOOK NOW</button>
+        <a href = "reservations.html" class = "room-booknow">BOOK NOW</a>
       </div>
       <div>
         <img src = "img/enchantment.jpg" alt = "Enchantment" class = "room-image" />
@@ -75,7 +85,7 @@
         <p>
           Price per night: $150
         </p>
-        <button class = "room-booknow" type="button">BOOK NOW</button>
+        <a href = "reservations.html" class = "room-booknow">BOOK NOW</a>
       </div>
       <div>
         <img src = "img/africa.jpg" alt = "Out of Africa" class = "room-image" />
@@ -86,10 +96,10 @@
         <p>
           Price per night: $150
         </p>
-        <button class = "room-booknow" type="button">BOOK NOW</button>
+        <a href = "reservations.html" class = "room-booknow">BOOK NOW</a>
       </div>
       <div>
-        <a id = "special-offers" class = "room-title">Special Offers</a>
+        <a id = "special-offers" class = "special-offers">Special Offers</a>
         <h3 class = "package-header">Sweetheart Package</h3>
         <p>
           Spend an enchanted evening at the Buckeye Bed & Breakfast and a Romantic dinner for two! BYOB...
@@ -106,14 +116,19 @@
         </p>
       </div>
     </main>
-    <footer class = "footer-text">
-      <p>
-        Copyright 2017 Buckeye Bed and Breakfast.
-      </p>
-      <a href = "#" class = "fa fa-facebook"></a>
-      <a href = "#" class = "fa fa-twitter"></a>
-      <a href = "#" class = "fa fa-instagram"></a>
-      <a href = "#" class = "fa fa-email"></a>
+    <footer>
+      <h4 class="footer-text">Copyright 2017 Buckeye Bed and Breakfast.</h4>
+      <div class="footer-social-icons">
+        <ul class="social-icons">
+          <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+          <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
     </footer>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src = "scripts.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
   </body>
 </html>
