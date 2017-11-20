@@ -6,14 +6,27 @@ body {
   max-width: 1000px;
   padding: 1em;
   background-color: #F4F2F1;
+  margin: 0 auto;
 }
 
+.home {
+  padding-top: 150px;
+}
 
+.reservations {
+  padding-top: 150px;
+}
+
+main {
+}
+
+/*
 div, section, main, aside, header, footer {
   border: 1px solid lightgray;
   padding: .5em;
   margin-bottom: 1em;
 }
+*/
 
 .navul {
   position: fixed;
@@ -32,6 +45,7 @@ nav {
   width: 100%;
   margin: 0 auto;
 }
+
 nav a {
   display: block;
   text-align: center;
@@ -98,12 +112,24 @@ a:active {
   background-color: #F4F2F1;
 }
 
-.room-image {
-  max-width: 100px;
-}
-
 .join-us {
   font-family: 'PT+Sans:400', sans-serif;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buckeyehouse {
+
+}
+
+.break-line {
+  border: 0;
+  border-top: 4px solid #2C4C3B;
+  width: 20%;
 }
 
 h1 {
@@ -123,7 +149,49 @@ h3 {
 
 p {
   font-family: 'Raleway';
+  width: 600px;
+  line-height: 25px;
+  letter-spacing: 1px;
 }
+
+/* MOBILE MEDIA QUERIES */
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+
+  p {
+    width: 300px;
+  }
+
+  .room-image {
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1280px) {
+
+  .room-image {
+    max-width: 500px;
+  }
+
+}
+
+/* CENTERING TEXT */
+
+.pheaders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewname {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* END CENTERING TEXT */
 
 .roominfo {
   font-family: 'Raleway';
@@ -341,19 +409,6 @@ ul.social-icons {
     background-color: #125688;
 }
 
-.fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #90816F;
-}
-.fa-linkedin:hover {
-    background-color: #0073a4;
-}
-
 /* BOOK NOW BUTTON */
 
 .booknow {
@@ -369,6 +424,8 @@ ul.social-icons {
   padding: 10px 20px 10px 20px;
   border: solid #61574B 5px;
   text-decoration: none;
+  -webkit-box-shadow: 2px 2px 2px #666;
+  box-shadow: 2px 2px 2px #666;
 
 }
 
@@ -443,4 +500,17 @@ ul.social-icons {
   background-color: #2C4C3B;
   transition: all 0.3s ease 0s;
   text-decoration: none;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.room-booknow:focus {
+  outline: none;
+}
+
+/* OUR ROOMS */
+
+.room-image {
+  padding-top: 100px;
 }
