@@ -8,14 +8,6 @@ body {
   margin: 0 auto;
 }
 
-.home {
-  padding-top: 150px;
-}
-
-.reservations {
-  padding-top: 150px;
-}
-
 header {
   position: fixed;
   background-color: #61574B;
@@ -65,19 +57,6 @@ nav a {
   color: #F4F2F1;
   display: inline-block;
   text-align: center;
-}
-
-.navli a:after {
-  position: relative;
-  top: -50px;
-  content: "";
-  display: inline-block;
-  width: 0px;
-  background: #F4F2F1;
-  height: 3px;
-  opacity: 0;
-  transition: opacity, width;
-  transition-duration: .3s;
 }
 
 .navul a:hover:after {
@@ -163,6 +142,14 @@ p {
 
   .room-image {
     max-width: 100%;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    width: 100%;
   }
 
 }
@@ -318,9 +305,11 @@ nav[role=navigation] {
                 display: inline-block;
                 margin: 0 0.25em;
             }
+            /*
             nav[role=navigation] li a {
-                border: 0;
+                border-bottom: 2px solid #F4F2F1;
             }
+            */
         }
 /* End of hamburger navigation CSS */
 
