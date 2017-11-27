@@ -16,25 +16,23 @@
       <span></span>
       </div>
     </a>
+    <img src = "img/buckeyelogo2.png" alt = "logo" class = "logo"/>
     <nav id="menu" role="navigation" class = "navbar">
       <ul class = "navul">
-        <li>
-          <a href = "index.html"><img src = "img/buckeyelogo2.png" alt = "logo" class = "logo"/></a>
+        <li class = "navli">
+          <a href = "index.html" class = "link active-link">Home</a>
         </li>
         <li class = "navli">
-          <a href = "index.html" class = "link">Home</a>
+          <a href = "ourrooms.html" class = "link active-link">Our Rooms</a>
         </li>
         <li class = "navli">
-          <a href = "ourrooms.html" class = "link">Our Rooms</a>
+          <a href = "#thehouse" class = "link active-link">The House</a>
         </li>
         <li class = "navli">
-          <a href = "#thehouse" class = "link">The House</a>
+          <a href = "reservations.html" class = "link active-link">Reservations</a>
         </li>
         <li class = "navli">
-          <a href = "reservations.html" class = "link">Reservations</a>
-        </li>
-        <li class = "navli">
-          <a href = "#contact" class = "link">Contact</a>
+          <a href = "#contact" class = "link active-link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -42,8 +40,21 @@
   <body class = "reservations">
        <!-- The page content goes here -->
     <main>
-      <div>
         <h1>Make a Reservation!</h1>
+        <!-- Select a date and room -->
+        <form>
+          <input id="date" name="date" />
+          <br /><br />
+          <select name = "room">
+            <option value = "sweetheart">Sweetheart Haven</option>
+            <option value = "treetop">Treetop</option>
+            <option value = "enchantment">Enchantment</option>
+            <option value = "africa">Out of Africa</option>
+          </select>
+          <br /><br />
+          <input type = "submit" />
+        </form>
+
         <div>
           <img src = "img/sweetheart.jpg" alt = "Sweetheart Haven" class = "room-image" />
           <h2 class = "room-title">Sweetheart Haven</h2>
@@ -59,7 +70,6 @@
             </li>
           </ul>
         </div>
-        <div>
           <img src = "img/treetop.jpg" alt = "Treetop" class = "room-image" />
           <h2 class = "room-title">Treetop</h2>
           <ul>
@@ -180,11 +190,12 @@
         </ul>
       </div>
     </footer>
-    <!-- BOOK NOW -->
-          <div>
-            <a href ="reservations.html" class = "booknow">BOOK NOW</a>
-          </div>
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Include Modernizer at the end of your HTML file first, before all other JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <!-- Don't forget to include Jquery also -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Finally, add the JavaScript found in the JS section to your own file called scripts.js and add this into your HMTL -->
     <script src = "scripts.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
   </body>
