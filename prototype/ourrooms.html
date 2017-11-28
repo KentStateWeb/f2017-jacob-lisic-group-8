@@ -7,6 +7,12 @@
     <title>Our Rooms</title>
     <meta name="description" content="Page Description Goes Here">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#90816f">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <header>
     <a href="#menu" class="menu-link">
@@ -40,62 +46,69 @@
   <body class = "home">
        <!-- The page content goes here -->
     <main>
-      <div>
-        <h2>ROOMS</h2>
-        <ul>
-          <li>
-            <a href = "#sweetheart-haven" class = "roomname">Sweetheart Haven</a>
-            <a href = "#treetop" class = "roomname">Treetop</a>
-            <a href = "#enchantment" class = "roomname">Enchantment</a>
-            <a href = "#out-of-africa" class = "roomname">Out of Africa</a>
-            <a href = "#special-offers" class = "roomname">Special Offers</a>
+      <!-- Tab Section -->
+      <div class = "js-tab-widget">
+        <h1 class = "base--h1">Rooms</h1>
+        <ul class="tab-list">
+          <li class="tab-item">
+            <a class="tab-link roomname" href="#sweetheart-haven">Sweetheart Haven</a>
+          </li>
+          <li class="tab-item">
+            <a class="tab-link roomname" href="#treetop">Treetop</a>
+          </li>
+          <li class="tab-item">
+            <a class="tab-link roomname" href="#enchantment">Enchantment</a>
+          </li>
+          <li class="tab-item">
+            <a class="tab-link roomname" href="#out-of-africa">Out of Africa</a>
           </li>
         </ul>
+        <section id="tab-1" class="tab-panel">
+          <img src = "img/sweetheart.jpg" alt = "Sweetheart Haven" class = "room-image" />
+          <a id = "sweetheart-haven" class = "room-title"><h2>Sweetheart Haven</h2></a>
+          <p>
+            Your romantic master suite is appointed with a spacious king size bed, and French doors which lead onto a second story balcony with intimate views of the Smoky Mountains. Your private bath is appointed with a marble double vanity, marble tile and jet tub.
+          </p>
+          <p>
+            Price per night: $190
+          </p>
+          <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
+        </section>
+        <section id="tab-2" class="tab-panel">
+          <img src = "img/treetop.jpg" alt = "Treetop" class = "room-image" />
+          <a id = "treetop" class = "room-title"><h2>Treetop</h2></a>
+          <p>
+            Your room has a queen size canopy four poster bed, hardwood flooring and window views of the surrounding hillsides. Your private bathroom is appointed with a marble vanity, shower/bathtub, and tile flooring with Smoky Mountain Black Bear decor throughout.
+          </p>
+          <p>
+            Price per night: $175
+          </p>
+          <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
+        </section>
+        <section id="tab-3" class="tab-panel">
+          <img src = "img/enchantment.jpg" alt = "Enchantment" class = "room-image" />
+          <a id = "enchantment" class = "room-title"><h2>Enchantment</h2></a>
+          <p>
+            This spacious room, decorated with an enchanted forest theme, provides a generous four poster canopy queen size bed, hardwood flooring and overlooks the rose gardens. Your private bathroom includes a marble double vanity, bath/shower and tile flooring.
+          </p>
+          <p>
+            Price per night: $150
+          </p>
+          <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
+        </section>
+        <section id="tab-4" class="tab-panel">
+          <img src = "img/africa.jpg" alt = "Out of Africa" class = "room-image" />
+          <a id = "out-of-africa" class = "room-title"><h2>Out of Africa</h2></a>
+          <p>
+            Your room features a queen size bed, hardwood flooring, and it is decorated with images from the continent of Africa. Your private bath has marble vanity, shower/bath and tile flooring.
+          </p>
+          <p>
+            Price per night: $150
+          </p>
+          <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
+        </section>
       </div>
-      <div>
-        <img src = "img/sweetheart.jpg" alt = "Sweetheart Haven" class = "room-image" />
-        <a id = "sweetheart-haven" class = "room-title"><h2>Sweetheart Haven</h2></a>
-        <p>
-          Your romantic master suite is appointed with a spacious king size bed, and French doors which lead onto a second story balcony with intimate views of the Smoky Mountains. Your private bath is appointed with a marble double vanity, marble tile and jet tub.
-        </p>
-        <p>
-          Price per night: $190
-        </p>
-        <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
-      </div>
-      <div>
-        <img src = "img/treetop.jpg" alt = "Treetop" class = "room-image" />
-        <a id = "treetop" class = "room-title"><h2>Treetop</h2></a>
-        <p>
-          Your room has a queen size canopy four poster bed, hardwood flooring and window views of the surrounding hillsides. Your private bathroom is appointed with a marble vanity, shower/bathtub, and tile flooring with Smoky Mountain Black Bear decor throughout.
-        </p>
-        <p>
-          Price per night: $175
-        </p>
-        <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
-      </div>
-      <div>
-        <img src = "img/enchantment.jpg" alt = "Enchantment" class = "room-image" />
-        <a id = "enchantment" class = "room-title"><h2>Enchantment</h2></a>
-        <p>
-          This spacious room, decorated with an enchanted forest theme, provides a generous four poster canopy queen size bed, hardwood flooring and overlooks the rose gardens. Your private bathroom includes a marble double vanity, bath/shower and tile flooring.
-        </p>
-        <p>
-          Price per night: $150
-        </p>
-        <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
-      </div>
-      <div>
-        <img src = "img/africa.jpg" alt = "Out of Africa" class = "room-image" />
-        <a id = "out-of-africa" class = "room-title"><h2>Out of Africa</h2></a>
-        <p>
-          Your room features a queen size bed, hardwood flooring, and it is decorated with images from the continent of Africa. Your private bath has marble vanity, shower/bath and tile flooring.
-        </p>
-        <p>
-          Price per night: $150
-        </p>
-        <a href = "reservations.html" class = "room-booknow">Pick a Date</a>
-      </div>
+
       <hr class = "break-line"/>
       <!-- SPECIAL OFFERS -->
       <div>
