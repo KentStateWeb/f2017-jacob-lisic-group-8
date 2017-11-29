@@ -265,7 +265,7 @@ p {
     width: 0;
     height: 2.7px;
     background: #F4F2F1;
-    transition: width .2s;
+    transition: width .3s;
   }
 
   .link:hover::after {
