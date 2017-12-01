@@ -46,7 +46,26 @@
   <body class = "reservations">
        <!-- The page content goes here -->
     <main>
+        <!-- Add the code for your slider -->
+        <!-- Create a DIV with the class "carousel-cell" for each item you'd like in your slider.  Note, for images, it's best to resize them all to the same height and width -->
+        <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+                 >
+          <div class="carousel-cell">
+                    <img src = "img/sweetheart-text.png" alt = "Sweetheart Haven">
+            </div>
+          <div class="carousel-cell">
+                    <img src = "img/treetop-text.png" alt = "Treetop">
+            </div>
+            <div class="carousel-cell">
+                    <img src = "img/enchantment-text.png" alt = "Enchantment">
+            </div>
+            <div class="carousel-cell">
+                    <img src = "img/outofafrica-text.png" alt = "Out of Africa">
+            </div>
+        </div>
+        <p class="caption">&nbsp;</p>
         <h1>Make a Reservation!</h1>
+
         <!-- Select a date and room -->
         <form>
           <input id="date" name="date" />
@@ -201,8 +220,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <!-- Don't forget to include Jquery also -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <!-- Finally, add the JavaScript found in the JS section to your own file called scripts.js and add this into your HMTL -->
+    <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
     <script src = "scripts.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
   </body>
 </html>

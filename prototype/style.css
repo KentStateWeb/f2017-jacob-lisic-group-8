@@ -690,7 +690,56 @@ ul.social-icons {
   }
 }
 
+/* RESERVATIONS */
 
+/* If you're using images in your slider, add this CSS to ensure they take up 100% of the available area */
+
+.carousel-cell {
+    width: 100%;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+.carousel {
+  margin-top: 2.6em;
+}
+
+.carousel:after {
+  content: 'flickity';
+  display: none; /* hide :after */
+}
+
+.caption {
+  background: #F4F2F1;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
 
 
 
