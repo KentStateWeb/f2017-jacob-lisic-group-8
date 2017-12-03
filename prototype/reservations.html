@@ -48,34 +48,35 @@
     <main>
         <!-- Add the code for your slider -->
         <!-- Create a DIV with the class "carousel-cell" for each item you'd like in your slider.  Note, for images, it's best to resize them all to the same height and width -->
-        <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
-                 >
+        <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'>
           <div class="carousel-cell">
-                    <img src = "img/sweetheart-text.png" alt = "Sweetheart Haven">
-            </div>
+            <img src = "img/sweetheart-text.png" alt = "Sweetheart Haven">
+          </div>
           <div class="carousel-cell">
-                    <img src = "img/treetop-text.png" alt = "Treetop">
-            </div>
-            <div class="carousel-cell">
-                    <img src = "img/enchantment-text.png" alt = "Enchantment">
-            </div>
-            <div class="carousel-cell">
-                    <img src = "img/outofafrica-text.png" alt = "Out of Africa">
-            </div>
+            <img src = "img/treetop-text.png" alt = "Treetop">
+          </div>
+          <div class="carousel-cell">
+            <img src = "img/enchantment-text.png" alt = "Enchantment">
+          </div>
+          <div class="carousel-cell">
+            <img src = "img/outofafrica-text.png" alt = "Out of Africa">
+          </div>
         </div>
         <p class="caption">&nbsp;</p>
         <h1>Make a Reservation!</h1>
 
         <!-- Select a date and room -->
         <form>
-          <input id="date" name="date" />
           <select name = "room">
             <option value = "sweetheart">Sweetheart Haven</option>
             <option value = "treetop">Treetop</option>
             <option value = "enchantment">Enchantment</option>
             <option value = "africa">Out of Africa</option>
           </select>
-          <input type = "submit" />
+          <br /><br />
+          <input id="date" name="date" class="calendar"/>
+          <br /><br />
+          <input type = "submit" class = "submit-btn"/>
         </form>
         <hr class = "break-line"/>
         <!-- SPECIAL OFFERS -->
@@ -96,8 +97,6 @@
               Price depends on room. However, the 20% discount will be applied.
             </p>
         </div>
-        <hr class = "break-line"/>
-
         </div>
     </main>
     <footer>
