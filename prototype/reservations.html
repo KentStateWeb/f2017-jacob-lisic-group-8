@@ -67,6 +67,16 @@
 
         <!-- Select a date and room -->
         <form>
+          <div class = "form-field-group">
+            <label class = "form-label">First Name</label>
+            <input class = "form-text" text = "text" placeholder="Steve"/>
+            <label class = "form-label">Last Name</label>
+            <input class = "form-text" text = "text" placeholder="Jobs"/>
+            <label class = "form-label">Email</label>
+            <input class = "form-text" text = "text" placeholder="sjobs@gmail.com"/>
+            <label class = "form-label">Phone Number</label>
+            <input class = "form-text" text = "text" placeholder="330-271-2914"/>
+          </div>
           <select name = "room">
             <option value = "sweetheart">Sweetheart Haven</option>
             <option value = "treetop">Treetop</option>
@@ -74,9 +84,11 @@
             <option value = "africa">Out of Africa</option>
           </select>
           <br /><br />
-          <input id="date" name="date" class="calendar"/>
+          <div class = "form-field-group">
+            <input id="date" name="date" class="calendar"/>
+          </div>
           <br /><br />
-          <input type = "submit" class = "submit-btn"/>
+          <input type = "submit" class = "submit-btn" value = "RESERVE NOW"/>
         </form>
         <hr class = "break-line"/>
         <!-- SPECIAL OFFERS -->

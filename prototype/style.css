@@ -9,11 +9,10 @@ body {
 }
 
 header {
-  position: fixed;
   background-color: #61574B;
-  width: 100%;
   display: flex;
   z-index: 100;
+  padding: 1em;
 }
 
 .container {
@@ -84,9 +83,7 @@ a:visited {
 .logo {
   max-width: 100px;
   height: 50px;
-  vertical-align: middle;
   padding: .5em;
-  float: left;
 }
 
 .join-us {
@@ -113,6 +110,15 @@ h1, h2 {
   text-align: center;
 }
 
+h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
 .reviewheader {
   margin-bottom: 50px;
 }
@@ -124,6 +130,7 @@ h1, h2 {
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
+  text-align: center;
 }
 
 p {
@@ -132,6 +139,7 @@ p {
   letter-spacing: 1px;
   margin-left: 150px;
   margin-right: 150px;
+  text-align: left;
 }
 
 /* MOBILE MEDIA QUERIES */
@@ -144,6 +152,7 @@ p {
 
   header {
     flex-wrap: wrap;
+    width: 100%;
   }
 
   nav {
@@ -401,10 +410,9 @@ p {
 
 /* Start of hamburger navigation CSS */
 a.menu-link {
-  float: right;
-  display: block;
   padding: 1em;
-  width: 125px;
+  position: absolute;
+  right: 0;
 }
 
 /* Adds Code for Pure CSS Hamburger Button */
@@ -596,11 +604,10 @@ ul.social-icons {
 /* BOOK NOW BUTTON */
 
 .booknow {
-
   position: fixed;
   bottom: 20px;
-  right: 30px;
-  text-shadow: 1px 1px 1px #666666;
+  right: 20px;
+  text-shadow: .5px .5px .5px #666666;
   font-family: 'Gill Sans', sans-serif;
   color: #61574B;
   font-size: 20px;
@@ -610,7 +617,7 @@ ul.social-icons {
   text-decoration: none;
   -webkit-box-shadow: 2px 2px 2px #666;
   box-shadow: 2px 2px 2px #666;
-
+  opacity: .8;
 }
 
 .booknow:focus {
@@ -629,7 +636,7 @@ ul.social-icons {
 
   .booknow {
     bottom: 10px;
-    right: 20px;
+    right: 10px;
     text-shadow: .5 .5 .5 #666666;
     font-size: 14px;
     padding: 5px 10px 5px 10px;
@@ -646,7 +653,7 @@ ul.social-icons {
 
   .booknow {
     bottom: 15px;
-    right: 25px;
+    right: 15px;
     text-shadow: .75 .75 .75 #666666;
     font-size: 18px;
     padding: 7.5px 15px 7.5px 15px;
@@ -663,14 +670,15 @@ ul.social-icons {
 
 .room-booknow {
   background-color: #90816F;
+  opacity: .9;
   font-family: 'Gill Sans', sans-serif;
   color: #F4F2F1;
   padding: .6em 1.5em;
-  margin-left: 150px;
 }
 
 .room-booknow:hover {
   background-color: #2C4C3B;
+  opacity: .9;
   transition: all 0.3s ease 0s;
   text-decoration: none;
   -webkit-transform: scale(1.1);
@@ -684,22 +692,20 @@ ul.social-icons {
 
 /* OUR ROOMS */
 
-.base--h1 {
-  margin-top: 2.6em;
-}
-
 .room-image {
-  padding-top: 100px;
+  max-width: 100%;
   top: 50%;
   left: 50%;
-  /* bring your own prefixes */
-  transform: translate(12.5%, -10%);
+}
+
+.js-tab-widget {
+  text-align: center;
 }
 
 .tab-list {
+  display: block;
   background: #90816F;
   padding: 0;
-  margin: 0;
 }
 
 .tab-item {
@@ -728,7 +734,6 @@ ul.social-icons {
 
 .tab-panel {
   background: #F4F2F1;
-  padding: 1rem;
 }
 
 .tab-panel h2 {
@@ -778,9 +783,11 @@ ul.social-icons {
 }
 
 /* Ensures that Flickity waits until CSS has loaded to calculate the height of the cells */
+/*
 .carousel {
   margin-top: 2.6em;
 }
+*/
 
 .carousel:after {
   content: 'flickity';
@@ -820,24 +827,25 @@ ul.social-icons {
 }
 
 form {
-  align-items: center;
-  background: #90816F;
-  padding: 50px 75px 50px 50px;
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #F4F2F1;
+  padding: 1em;
 }
 
 select {
-  background: #61574B;
+  background: #90816F;
   padding: 15px 50px 15px 15px;
   color: #F4F2F1;
   line-height: 1;
   border: none;
   border-radius: 0;
   height: 46px;
-  min-width: 400px;
   outline: 0 !important;
   appearance: none;
   -moz-appearance: none;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   cursor: pointer;
 }
 
@@ -845,19 +853,50 @@ select::-ms-expand {
   display: none;
 }
 
+.form-label {
+  font-family: "Gill Sans", sans-serif;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-text {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 2px solid #61574B;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.form-text:focus {
+  outline: 0;
+}
+
 .calendar {
+
 }
 
 .submit-btn {
-  background-color: #61574B;
+  background-color: #90816F;
   font-family: 'Gill Sans', sans-serif;
   color: #F4F2F1;
-  padding: 1.5em 10em;
+  padding: 15px 70px;
+  text-align: center;
   border-radius: 30px;
-  border: .5em solid #F4F2F1;
+  border: none;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
+.submit-btn:hover {
+  background-color: #61574B;
+  transition: all 0.3s ease 0s;
+}
 
+.submit-btn:focus {
+  outline: 0;
+}
 
 
 
