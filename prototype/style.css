@@ -12,7 +12,7 @@ header {
   background-color: #61574B;
   display: flex;
   z-index: 100;
-  padding: 1em;
+  padding: .5em;
 }
 
 .container {
@@ -41,11 +41,13 @@ div, section, main, aside, header, footer {
   display: inline-block;
   text-align: center;
   font-family: 'PT+Sans:400', sans-serif;
+  font-size: 16px;
 }
 
 nav {
   width: 100%;
   margin: 0 auto;
+  margin-left: 3em;
 }
 
 nav a {
