@@ -153,7 +153,6 @@ $menulink.click(function() {
 
       // set up next tab link
       nextTabLink.setAttribute('href', '#tab-link-' + nextTabLinkIndex);
-      nextTabLink.textContent = 'Next Tab';
       panel.appendChild(nextTabLink);
 
       if (i == 0) {
