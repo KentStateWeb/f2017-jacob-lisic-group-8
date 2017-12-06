@@ -15,6 +15,25 @@ header {
   padding: .5em;
 }
 
+/* Skip to main content for accessibility */
+
+#skip-to-content {
+  padding: 1em;
+  position: absolute;
+  top: -40px;
+  left: 1em;
+  z-index: 1000;
+  color: white;
+}
+
+#skip-to-content:focus {
+  position: absolute;
+  top: 0;
+  background: #222;
+}
+
+/* End of skip to main content */
+
 .container {
   position: relative;
 }
@@ -60,7 +79,8 @@ nav a {
   text-align: center;
 }
 
-.navul a:hover:after {
+.navul a:hover:after,
+.navul a:focus:after {
   opacity: 1;
   width: 100%;
 }
@@ -75,6 +95,10 @@ a:link {
 
 a:visited {
   text-decoration: none;
+}
+
+.pets {
+  text-decoration: underline !important;
 }
 
 .buckeyehouse {
@@ -330,7 +354,8 @@ p {
     transition: width .3s;
   }
 
-  .link:hover::after {
+  .link:hover::after,
+  .link:focus::after {
     width: 100%;
   }
 
@@ -574,7 +599,7 @@ ul.social-icons {
     transition: .5s;
     background-color: #90816F;
 }
-.fa-facebook:hover {
+.fa-facebook:hover, .fa-facebook:focus {
     background-color: #3d5b99;
 }
 .fa-twitter {
@@ -586,7 +611,7 @@ ul.social-icons {
     transition: .5s;
     background-color: #90816F;
 }
-.fa-twitter:hover {
+.fa-twitter:hover, .fa-twitter:focus {
     background-color: #00aced;
 }
 
@@ -599,7 +624,7 @@ ul.social-icons {
     transition: .5s;
     background-color: #90816F;
 }
-.fa-instagram:hover {
+.fa-instagram:hover, .fa-instagram:focus {
     background-color: #125688;
 }
 
@@ -626,7 +651,7 @@ ul.social-icons {
   outline: none;
 }
 
-.booknow:hover {
+.booknow:hover, .booknow:focus{
   text-decoration: none;
   color: #F4F2F1;
   background-color: #90816F;
@@ -645,7 +670,7 @@ ul.social-icons {
     border: solid #61574B 3px;
   }
 
-  .booknow:hover {
+  .booknow:hover, .booknow:focus {
     border: solid #2C4C3B 3px;
   }
 
@@ -662,7 +687,7 @@ ul.social-icons {
     border: solid #61574B 4px;
   }
 
-  .booknow:hover {
+  .booknow:hover, .booknow:focus {
     border: solid #2C4C3B 4px;
   }
 
@@ -678,7 +703,7 @@ ul.social-icons {
   padding: .6em 1.5em;
 }
 
-.room-booknow:hover {
+.room-booknow:hover, .booknow:focus {
   background-color: #2C4C3B;
   opacity: .9;
   transition: all 0.3s ease 0s;
@@ -891,7 +916,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-.submit-btn:hover {
+.submit-btn:hover, .submit-btn:focus {
   background-color: #61574B;
   transition: all 0.3s ease 0s;
 }
@@ -1009,7 +1034,9 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .pika-prev:hover,
-.pika-next:hover {
+.pika-next:hover,
+.pika-prev:focus,
+.pika-next:focus {
     opacity: 1;
 }
 
@@ -1119,7 +1146,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
     opacity: .3;
 }
 
-.pika-button:hover {
+.pika-button:hover, .pika-button:focus {
     color: #fff;
     background: #90816F;
     box-shadow: none;

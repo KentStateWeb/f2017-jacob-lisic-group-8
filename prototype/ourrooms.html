@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,8 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <header>
+  <header role = "banner">
+    <a id="skip-to-content" href="#content">skip to main content</a>
     <a href="#menu" class="menu-link">
       <div class="menu-link__hamburger">
       <span></span>
@@ -46,7 +47,7 @@
   </header>
   <body class = "home">
        <!-- The page content goes here -->
-    <main>
+    <main role = "main">
       <!-- Tab Section -->
       <div class = "js-tab-widget">
         <h1 class = "base--h1">Our Rooms</h1>
@@ -142,11 +143,11 @@
         </p>
         <h3 class = "policy-header">Pet Policy:</h3>
         <p>
-          Sorry, we love <a href = "img/puppies.jpg">pets</a>, but Reese the Cat will not allow other animals at the inn.
+          Sorry, we love <a href = "img/puppies.jpg" class = "pets" alt = "puppies">pets</a>, but Reese the Cat will not allow other animals at the inn.
         </p>
       </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <h4 class="footer-text">Copyright 2017 Buckeye Bed and Breakfast.</h4>
       <div class="footer-social-icons">
         <ul class="social-icons">

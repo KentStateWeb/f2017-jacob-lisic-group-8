@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,8 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#61574b">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <header>
+  <header role = "banner">
+    <a id="skip-to-content" href="#content">skip to main content</a>
     <a href="#menu" class="menu-link">
       <div class="menu-link__hamburger">
       <span></span>
@@ -45,7 +46,7 @@
   </header>
   <body class = "reservations">
        <!-- The page content goes here -->
-    <main>
+    <main role = "main">
         <!-- Add the code for your slider -->
         <!-- Create a DIV with the class "carousel-cell" for each item you'd like in your slider.  Note, for images, it's best to resize them all to the same height and width -->
         <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'>
@@ -66,7 +67,7 @@
         <h1>Make a Reservation!</h1>
 
         <!-- Select a date and room -->
-        <form>
+        <form role = "search">
           <div class = "form-field-group">
             <label class = "form-label">First Name</label>
             <input class = "form-text" text = "text" placeholder="Steve"/>
@@ -111,7 +112,7 @@
         </div>
         </div>
     </main>
-    <footer>
+    <footer role="contentinfo">
       <h4 class="footer-text">Copyright 2017 Buckeye Bed and Breakfast.</h4>
       <div class="footer-social-icons">
         <ul class="social-icons">
