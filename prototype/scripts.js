@@ -9,6 +9,27 @@ $menulink.click(function() {
   return false;
 });});
 
+/** This is the back to top button **/
+
+$(document).ready(function() {
+			// Show or hide the sticky footer button
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 200) {
+					$('.go-top').fadeIn(200);
+				} else {
+					$('.go-top').fadeOut(200);
+				}
+			});
+
+			// Animate the scroll to top
+			$('.go-top').click(function(event) {
+				event.preventDefault();
+
+				$('html, body').animate({scrollTop: 0}, 300);
+			})
+		});
+
+
 /** This tab solution is based on Scott Vinkle's Simple Tabs with some modications to  remove the jQuery dependency, as well as modifying the UI look and feel.
 *** https://codepen.io/svinkle/pen/edmDF
 ***/

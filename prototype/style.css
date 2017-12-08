@@ -34,6 +34,27 @@ header {
 
 /* End of skip to main content */
 
+/* Back to top button */
+
+.go-top {
+  font-family: Raleway, sans-serif;
+	position: fixed;
+	bottom: 2em;
+	left: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.go-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* End back to top button */
+
 .container {
   position: relative;
 }
@@ -183,6 +204,7 @@ p {
   header {
     flex-wrap: wrap;
     width: 100%;
+    padding: 0;
   }
 
   nav {
