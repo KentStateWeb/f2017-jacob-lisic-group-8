@@ -4590,7 +4590,7 @@ $(document).ready(function() {
 
         } else {
             // Use Pikaday
-            $input = $("<input type='text' class='pikaday__display pikaday__display--pikaday " + settings.classes + "' placeholder='" + settings.placeholder + "' />");
+            $input = $("<input type='text' class=' form-text pikaday__display pikaday__display--pikaday " + settings.classes + "' placeholder='" + settings.placeholder + "' />");
             $container.append($input);
 
             var hasSelected = false;
