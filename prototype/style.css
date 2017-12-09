@@ -129,6 +129,11 @@ a:visited {
 
 .pets {
   text-decoration: underline !important;
+  color: #90816F;
+}
+
+.pets:visited {
+  color: #90816F;
 }
 
 .buckeyehouse {
@@ -151,6 +156,7 @@ a:visited {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 35px;
 }
 
 .break-line {
@@ -168,9 +174,8 @@ h1, h2 {
 }
 
 h1 {
-  padding-top: 50px;
   padding-bottom: 50px;
-  font-size: 35px;
+  font-size: 45px;
 }
 
 h2 {
@@ -190,7 +195,6 @@ h2 {
 h3 {
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
-  text-align: center;
   margin-top: 50px;
 }
 
@@ -217,19 +221,10 @@ p {
   header {
     flex-wrap: wrap;
     width: 100%;
-    padding: 0;
   }
 
   nav {
     width: 100%;
-  }
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 1280px) {
-
-  .room-image {
-    max-width: 500px;
   }
 
 }
@@ -262,7 +257,7 @@ p {
 @media screen and (max-width: 450px) {
 
   .join-us {
-    font-size: 1em;
+    font-size: .9em;
     top: 55%;
   }
 
@@ -440,18 +435,21 @@ p {
 
 }
 
+@media screen and (max-width: 700px) {
+
+  h1 {
+    padding-bottom: 50px;
+    font-size: 35px;
+  }
+
+}
+
 /* END DESKTOP MEDIA QUERIES */
 
 
 /* CENTERING TEXT */
 
 .pheaders {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.reviewname {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -749,7 +747,8 @@ ul.social-icons {
   opacity: .9;
   font-family: 'Gill Sans', sans-serif;
   color: #F4F2F1;
-  padding: .6em 1.5em;
+  padding: 1em 1.5em;
+  border-radius: 2px;
 }
 
 .room-booknow:hover, .booknow:focus {
@@ -934,9 +933,9 @@ select::-ms-expand {
 .form-text {
   padding: 10px 20px;
   border-radius: 3px;
-  border: 2px solid #61574B;
+  border: 1px solid #61574B;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
@@ -944,19 +943,17 @@ select::-ms-expand {
   outline: 0;
 }
 
-.calendar {
-
-}
-
 .submit-btn {
+  width: 100%;
+  margin: 0 auto;
   background-color: #90816F;
   font-family: 'Gill Sans', sans-serif;
   color: #F4F2F1;
   padding: 15px 70px;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 3px;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   cursor: pointer;
 }
