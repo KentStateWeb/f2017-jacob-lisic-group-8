@@ -680,17 +680,6 @@ footer {
   margin-top: 100px;
 }
 
-.pattern-footer-text {
-  font-weight: 300;
-  color: #F4F2F1;
-  background-color: #90816F;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 0;
-  line-height: 25px;
-  letter-spacing: .5px;
-}
-
 .footer-text {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
