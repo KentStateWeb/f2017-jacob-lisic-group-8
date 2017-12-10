@@ -30,7 +30,7 @@ $(document).ready(function() {
 		});
 
 
-/** This tab solution is based on Scott Vinkle's Simple Tabs with some modications to  remove the jQuery dependency, as well as modifying the UI look and feel.
+/** This tab solution is based on Scott Vinkle's Simple Tabs with some modications to remove the jQuery dependency, as well as modifying the UI look and feel.
 *** https://codepen.io/svinkle/pen/edmDF
 ***/
 
