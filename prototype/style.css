@@ -944,6 +944,7 @@ select::-ms-expand {
   letter-spacing: 2px;
   text-decoration: none;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 
